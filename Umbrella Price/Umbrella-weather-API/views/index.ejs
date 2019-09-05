@@ -1,0 +1,36 @@
+
+<!-- Fillimisht përfshijmë file-n header (për menubar-in) -->
+<% include ./partials/header %>
+<!-- Fillimisht përfshijmë skriptin kryesor (ku kryhen veprimet kryesore) -->
+<script src="/javascript/script.js"></script>
+  <!-- Në bazë të ID përkatëse do të realizohen edhe ndryshimet për elementët përkatës -->
+  <div class="ui main tex container" id="cadrat">
+    <div class="ui huge header">Detyra 2</div>
+     <!-- Informacionin e shfaqim në formën e një tabele -->
+      <table class="ui definition table divided ">
+     <!-- Cilësojmë elementët në kokën e tabelës -->
+        <th>Emri</th>
+        <th>Tipi</th>
+        <th>Përshkrimi</th>
+        <th>Cmimi</th>
+     <!-- Për çdo element afishojmë informacionin bazuar në 'tiparet' përkatëse sipas header-it-->
+        <% cadrat.forEach(function(cadra){ %>
+        <tbody>
+           <tr>
+     <!-- Emri i çadrës -->
+             <td><a href="/cadrat/<%= cadra._id %>"> <%= cadra.name %> </a></td>
+     <!-- Tipi i çadrës -->
+             <td><%= cadra.type %></td>
+     <!-- Përshkrimi i çadrës -->
+             <td><%=cadra.description %></td>
+     <!-- Cmimi i çadrës ku do të afishohet çmimi aktual bazuar tek rezultati për motin aktual -->
+     <!-- Cmimin është caktuar në lekë në mënyrë statike -->
+             <td><%=cadra.price %> &nbsp <%= cadra.price_changes.newPrice %>&nbsp Lekë<br><br></td>
+           </tr>
+        </tbody>
+       <% }) %>
+     </table>
+    </div>
+  </div>
+<!-- Në fund përfshijmë skedarin footer.ejs për të mbyllur edhe tag-et -->
+<% include ./partials/footer %>

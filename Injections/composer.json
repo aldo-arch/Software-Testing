@@ -1,0 +1,13 @@
+{
+    "name": "user/f4",
+    "type": "project",
+    "authors": [
+        {
+            "name": "g3",
+            "email": "e@xample.com"
+        }
+    ],
+    "require": {
+        "aura/autoload": "^2.0"
+    }
+}

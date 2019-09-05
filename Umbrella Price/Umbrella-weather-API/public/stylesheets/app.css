@@ -1,0 +1,6 @@
+
+/** Stilimi i ikonës **/
+.icon {font-size: 2em;}
+.container.main{margin-top: 7.0em;}
+#delete{display:  inline;}
+/**Ky skript është 'përfshirë' në header (skripti header.ejs)

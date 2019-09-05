@@ -1,0 +1,44 @@
+
+-Paraqitja--------------------------------------------------------------------------------------------------------------------
+a) A ka një paraqitje minimaliste dhe te qartë (të kuptueshme),responsive si dhe orientuese?
+------------------------------------------------------------------------------------------------------------------------------
+
+-Lexueshmëria-----------------------------------------------------------------------------------------------------------------
+a) Variablat a kane emra te kuptueshëm për të shprehur rolin e tyre
+b) Funksionet / metodat a kane emra 'të kuptueshem'
+c) A ka komente për të sqaruar pjesë të kodit.
+d) A janë të identifikueshme teknikat e përdorura në kod ?
+e) Struktura (e organizuar mirë ?) A kuptohet kodi?
+f) A mund të interpretohet lehtë kodi?
+g) Struktura e kodit a është e qartë?
+h) A është funksioni shumë i madh ( të përmbajë shumë veprime, të jetë i komplikuar? )?
+i) Dublikimi i kodit - a ka përdorur/ripërdorur pjesë të kodit (funksione etj) disa herë në kod?
+-------------------------------------------------------------------------------------------------------------------------------
+
+-Besueshmëria------------------------------------------------------------------------------------------------------------------
+a) A ka një nivel të caktuar sigurie në aplikacion (jo një element i kërkuar për këtë detyrë)?
+b) A mund të vendoset lehtësisht në punë në kompjutera të ndryshëm?
+c) A informon përdoruesin në lidhje me çdo element/veprim (heuristikat)?
+d) A ka error handling?
+-------------------------------------------------------------------------------------------------------------------------------
+
+-Përdorueshmëria---------------------------------------------------------------------------------------------------------------
+a) A është e lehtë për tu përdorur përsa i përket nderfaqes grafike, si dhe e kuptueshme? (duke patur parasysh heurisitkat)
+b) Në lidhje me ripërdorueshmërinë - a mund te ripërdoret kodi për më vonë?
+-------------------------------------------------------------------------------------------------------------------------------
+
+-Testime dhe ndryshime---------------------------------------------------------------------------------------------------------
+a) A mund të realizohet lehte debug-u ?
+b) Fleksibiliteti i kodit - a është kodi dinamik dhe a mund të kryhen modifikime me numër minimal përshtatjesh/konfigurimesh?
+c) Testueshmëria - kodi duhet të testohet lehtësisht ( pra të jetë i lehtë për tu testuar )
+-------------------------------------------------------------------------------------------------------------------------------
+
+-Referenca---------------------------------------------------------------------------------------------------------------------
+Për të listuar kriteret e mësipërme, u bazuam në:
+
+Evoketechnologies - Code Review Checklist – To Perform Effective Code Reviews
+URL: https://www.evoketechnologies.com/blog/code-review-checklist-perform-effective-code-reviews/
+
+Code Review Checklist
+URL: https://nyu-cds.github.io/effective-code-reviews/03-checklist/
+-------------------------------------------------------------------------------------------------------------------------------

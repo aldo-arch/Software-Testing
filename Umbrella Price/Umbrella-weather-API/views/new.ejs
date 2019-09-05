@@ -1,0 +1,30 @@
+
+<!-- Fillimisht përfshijmë file-n header (për menubar-in) -->
+<% include ./partials/header %>
+<div class="ui main text container segment">
+    <div class="ui huge header">Shto Cadra</div>
+    <form class="ui form" action="/cadrat" method="POST">
+        <div class="field">
+        <!-- Elementët e form-ës -->
+            <lable>Emri</lable>
+            <input type="text" name="data[name]" placeholder="Emri">
+        </div>
+          <div class="field">
+            <lable>Tipi</lable>
+            <input type="text" name="data[type]" placeholder="Tipi">
+        </div>
+          <div class="field">
+            <lable>Përshkrimi</lable>
+            <textarea name="data[description]"></textarea>
+        </div>
+        <div class="field">
+          <lable>Cmimi</lable>
+        <!-- Merr vetëm vlera numerike (jo karaktere) si input-->
+        <!-- Gjithashtu nuk pranon as vlerën bosh -->
+          <input type="text" name="data[price]" placeholder="Cmimi">
+        </div>
+        <input class="positive ui button" type="submit">
+    </form>
+</div>
+<!-- Në fund përfshijmë skedarin footer.ejs për të mbyllur edhe tag-et -->
+<% include ./partials/footer %>

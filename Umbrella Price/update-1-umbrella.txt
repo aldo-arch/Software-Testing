@@ -1,0 +1,81 @@
+
+//update 1 cader
+// app.get("/changeprice/:_id/:_oldprice",function(req, res){
+//    var today = new Date();
+//    var newprice=parseInt(req.params._oldprice)+100;
+//    var oldprice=req.params._oldprice;
+//    var id=req.params._id;
+//    console.log(id)
+//    var obj ={
+//    	changeDate: today,
+//    	oldPrice: oldprice
+//    };
+//    console.log(obj)
+// Cadra.update(
+// 	{_id:id},
+// 	//{price:newprice,
+// 	{price:newprice,
+// 		$push:{price_changes:obj} 
+// 	},
+// 	function(err,data){
+// 	console.log(data)
+// 	if(err)
+// 		{
+// res.json({ success:0,errmsg:"vk",price:0})
+// 		}
+// 	else
+// 	{
+// 		res.json({ success:1,errmsg:"",price:newprice})
+// 	}
+// }
+// )
+// })
+
+
+// update 1 cader
+// $(document).ready(
+// function call(){ debugger;
+//  var APIid = "f7ee5eed1169d1ec2e4b4d00902a7644&fbcl"
+//  var oldprice=$("#price").val();
+//  var id=$("#ID").val();
+// $.ajax({
+//  method: "GET",
+//  url:"http://api.openweathermap.org/data/2.5/weather/?APPID="+APIid,
+//  dataType: "json",
+//  data:{q:"Tirana"},
+//  success:function(data)
+//  {	console.log(data);
+//  	var weather=data.weather[0].main
+//  	if(weather.toUpperCase() != "CLOUD")
+//  	{debugger;
+//  		$.ajax({
+//  			method:"GET",
+//  			url:"http://localhost:3000/changeprice/"+id+"/"+oldprice,
+//  			datatype:"json",
+//  			success:function(data){
+//  				debugger;
+//  				if(data.success==1)
+//  				{
+//  				$("#price").val(data.price);	
+//  				}
+//  				else{
+//  					alert(data.errmsg)
+//  				}
+
+//  			},
+//  			error:function(error){
+//  				alert("Ndodhi nje gabim fatal vlla")
+//  			}
+//  		})
+//  	}
+//  }
+// })
+
+// .fail(function(data){
+//  alert("failed to get data");
+// })
+// }
+
+// 	)
+
+

@@ -1,0 +1,32 @@
+
+<!-- Fillimisht përfshijmë file-n header (për menubar-in) -->
+<% include ./partials/header %>
+<div class="ui main text container segment">
+<!-- Këtu jemi në 'opsionin kur mund të modifikojmë çadrën -->'
+    <div class="ui huge header">Edit <%= cadra.name %> </div>
+    <form class="ui form"action="/cadrat/<%= cadra._id %>?_method=PUT " method="POST">
+    <input type="hidden" value="<%= cadra._id %>" id="ID">
+        <div class="field">
+<!-- Forma përmban elementët e mëposhtëm -->
+            <lable>Emri</lable>
+            <input type="text" name="data[name]" value="<%= cadra.name %>">
+        </div>
+        <div class="field">
+            <lable>Tipi</lable>
+            <input type="text" name="data[type]" value="<%= cadra.type %>">
+        </div>
+          <div class="field">
+            <lable>Përshkrimi</lable>
+            <textarea name="data[description]"><%= cadra.description %></textarea>
+        </div>
+        <div class="field">
+<! -- Si vlerë në textbox do të afishohet çmimi aktual (bazuar në ndryshimin e motit)-->
+<! -- Këtu do të vendoset çmimi origjinal (pasi vetë algoritmi më pas i cakton edhe çmimin aktual bazuar në parashikim)-->
+            <lable>Cmimi</lable>
+            <input type="text" name="data[price]" id="price" value="<%= cadra.price %>">
+        </div>
+        <input class="positive ui button" type="submit">
+    </form>
+</div>
+<!-- Në fund përfshijmë skedarin footer.ejs për të mbyllur edhe tag-et -->
+<% include ./partials/footer %>

@@ -1,0 +1,32 @@
+
+<!-- Fillimisht përfshijmë file-n header (për menubar-in) -->
+<!-- Këtu jemi në rastin kur kemi klikuar emrin e një elementi dhe duam që ta modifikojmë apo ta fshijmë atë -->
+<% include ./partials/header %>
+<div class="ui main text container segment">
+<!-- Afishojmë disa prej elementëve të çadrës -->
+    <div class="ui huge header"><%=cadra.name %> </div>
+     <div class="ui top attached ">
+         <div class="item">
+           <div class="description">
+               <p><%= cadra.type %></p>
+           </div>
+            <div class="description">
+<!-- Në rastin para editimit, afishohet çmimi aktual bazuar edhe në ndryshimet e motit -->
+<!-- Në rastin pas editimit, afishohet çmimi i vendosur (pra pa marrë ndryshimet e çmimit 
+aktual bazuar në ndryshimin e motit)--!>
+                <p><%= cadra.price %></p>
+            </div>
+             <div class="description">
+                 <p><%= cadra.description %></p>
+             </div>
+<!-- Opsioni për ta edituar çadrën -->
+             <a class="ui orange basic button"href="/cadrat/<%= cadra.id %>/edit">EDIT</a>
+<!-- Opsioni për ta fshirë çadrën -->
+            <form id="delete" action="/cadrat/<%= cadra.id %>?_method=DELETE" method="POST">
+                <button class="ui red basic button">Delete</button>
+            </form>
+         </div>
+     </div>
+</div>
+<!-- Në fund përfshijmë skedarin footer.ejs për të mbyllur edhe tag-et -->
+<% include ./partials/footer %>
